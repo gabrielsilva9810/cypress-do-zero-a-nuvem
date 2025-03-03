@@ -14,7 +14,7 @@ document.querySelector('#phone-checkbox')
     isPhoneRequired = !isPhoneRequired
   })
 
-document.querySelector('button[type="submit"]')
+//document.querySelector('button[type="submit"]')
   .addEventListener('click', function(event) {
     event.preventDefault()
     const firstNameField = document.getElementById('firstName')
@@ -35,7 +35,7 @@ document.querySelector('button[type="submit"]')
     }
     if (!emailField.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
       return showAndHideErrorMessage()
-    }
+   // }
     firstNameField.value = ''
     lastNameField.value = ''
     emailField.value = ''
